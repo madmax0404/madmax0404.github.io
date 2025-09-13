@@ -66,3 +66,36 @@ hr.weak {
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
+/* === Mobile quick fixes === */
+@media (max-width: 640px) {
+  html { font-size: 15px; }             /* 전반적 타이포 살짝 축소 */
+  .content { padding: 0 14px; }         /* 좌우 여백 확보 */
+
+  /* 헤더 영역 단일 컬럼 정렬 */
+  header.content { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .photo img#portrait { max-width: 160px; height: auto; display: block; margin: 0 auto; border-radius: 12px; }
+
+  /* 카드 내부 여백 & 제목 크기 조정 */
+  .card { padding: 16px; }
+  h1.name { font-size: clamp(22px, 7vw, 30px); margin: 0; }
+  .age { margin-top: 6px; }
+
+  /* 긴 링크/텍스트 줄바꿈 (github 링크 등) */
+  a, p { overflow-wrap: anywhere; word-break: break-word; }
+
+  /* 프로젝트 이미지가 화면 밖으로 나가지 않도록 */
+  .project img { width: 100% !important; max-width: 100%; height: auto; display: block; }
+  /* 인라인으로 950px 지정된 이미지 무력화 (있다면) */
+  .project img[style*="width: 950px"] { width: 100% !important; }
+
+  /* 섹션 타이틀 행(좌:제목 / 우:기간) 줄바꿈 */
+  .section-title { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+  .section-title .p-description { align-self: flex-start !important; }
+
+  /* 구분선 간격 축소 */
+  hr { margin: 14px 0; }
+}
+
+/* 공통: 이미지 흔들림 방지(데스크탑/모바일) */
+#portrait, .project img { max-width: 100%; display: block; }
