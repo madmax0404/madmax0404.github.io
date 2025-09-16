@@ -2,24 +2,96 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
+    justify-content: flex-start;
+    padding: 80px 40px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+    width: 220px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.sidebar-title {
+    margin: 0 0 12px;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.sidebar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-links a {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.sidebar-links a:hover,
+.sidebar-links a:focus-visible {
+    color: var(--link);
+}
+
+.sidebar-links a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+}
+
+.main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-area > p {
+    width: 100%;
+    max-width: 1000px;
+}
+h2[id] {
+    scroll-margin-top: 80px;
 }
 
 .content {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
-
 header {
     display: flex;
     justify-content: space-between;
 }
-
 #portrait {
     height: 300px;
 }
-
 hr.junction {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     border: 2px solid black;
 }
 
@@ -51,7 +123,6 @@ hr.junction {
 .no-top-margin {
     margin-top: 0;
 }
-
 hr.weak {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.158);
@@ -67,35 +138,38 @@ hr.weak {
     margin-top: 30px;
 }
 
+@media (max-width: 1100px) {
+    body { padding: 60px 24px; }
+    .layout { flex-direction: column; align-items: stretch; gap: 24px; }
+    .sidebar { position: static; width: 100%; max-width: 1000px; }
+    .sidebar-links { flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+}
 /* === Mobile quick fixes === */
 @media (max-width: 640px) {
   html { font-size: 15px; }             /* 전반적 타이포 살짝 축소 */
+  body { padding: 32px 16px; }
+  .layout { gap: 16px; }
+  .sidebar { padding: 12px 16px; }
+  .sidebar-links { flex-direction: column; align-items: flex-start; gap: 8px; }
   .content { padding: 0 14px; }         /* 좌우 여백 확보 */
-
   /* 헤더 영역 단일 컬럼 정렬 */
   header.content { display: grid; grid-template-columns: 1fr; gap: 12px; }
   .photo img#portrait { max-width: 160px; height: auto; display: block; margin: 0 auto; border-radius: 12px; }
-
   /* 카드 내부 여백 & 제목 크기 조정 */
   .card { padding: 16px; }
   h1.name { font-size: clamp(22px, 7vw, 30px); margin: 0; }
   .age { margin-top: 6px; }
-
   /* 긴 링크/텍스트 줄바꿈 (github 링크 등) */
   a, p { overflow-wrap: anywhere; word-break: break-word; }
-
   /* 프로젝트 이미지가 화면 밖으로 나가지 않도록 */
   .project img { width: 100% !important; max-width: 100%; height: auto; display: block; }
   /* 인라인으로 950px 지정된 이미지 무력화 (있다면) */
   .project img[style*="width: 950px"] { width: 100% !important; }
-
   /* 섹션 타이틀 행(좌:제목 / 우:기간) 줄바꿈 */
   .section-title { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
   .section-title .p-description { align-self: flex-start !important; }
-
   /* 구분선 간격 축소 */
   hr { margin: 14px 0; }
 }
-
 /* 공통: 이미지 흔들림 방지(데스크탑/모바일) */
 #portrait, .project img { max-width: 100%; display: block; }
