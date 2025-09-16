@@ -24,7 +24,11 @@
 
 <body>
     <div class="layout">
-        <nav class="sidebar" aria-label="섹션 바로가기">
+        <nav class="sidebar is-open" aria-label="섹션 바로가기">
+            <button class="sidebar-toggle" type="button" aria-expanded="true">
+                <span class="toggle-icon" aria-hidden="true">☰</span>
+                <span class="toggle-label">목차 닫기</span>
+            </button>
             <p class="sidebar-title">섹션 바로가기</p>
             <ul class="sidebar-links">
                 <li><a href="#overview">간략 소개</a></li>
@@ -37,7 +41,7 @@
             </ul>
         </nav>
         <div class="main-area">
-            <p>데스크탑 브라우저에서 봐주세요!</p>
+            <!-- <p class="layout-notice">이 페이지는 데스크탑과 모바일 화면에 맞춰져 있어요.</p> -->
             <header class="content">
                 <div class="intro">
                     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">다크 / 라이트 모드 🌓</button>
@@ -464,6 +468,37 @@
     </footer> -->
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.querySelector('.sidebar');
+            const toggle = document.querySelector('.sidebar-toggle');
+            if (!sidebar || !toggle) {
+                return;
+            }
+            const label = toggle.querySelector('.toggle-label');
+            const mql = window.matchMedia('(max-width: 640px)');
+            function setState(expanded) {
+                toggle.setAttribute('aria-expanded', String(expanded));
+                sidebar.classList.toggle('is-open', expanded);
+                if (label) {
+                    label.textContent = expanded ? '목차 닫기' : '목차 열기';
+                }
+            }
+            function syncToViewport(event) {
+                if (event.matches) {
+                    setState(false);
+                } else {
+                    setState(true);
+                }
+            }
+            syncToViewport(mql);
+            mql.addEventListener('change', syncToViewport);
+            toggle.addEventListener('click', function () {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                setState(!expanded);
+            });
+        });
+    </script>
 </body>
 
 </html>
