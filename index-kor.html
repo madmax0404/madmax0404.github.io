@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="ko" data-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0b0f" />
+    <meta property="og:title" content="한종윤 · 포트폴리오">
+    <meta property="og:description" content="AI · ML · LLM · RAG · RL 포트폴리오">
+    <meta property="og:image" content="https://madmax0404.github.io/images/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="한종윤 포트폴리오 · 프로필 사진">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>한종윤 · 포트폴리오</title>
+    <link rel="stylesheet" href="theme.css" />
+    <script defer src="theme.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/726ec6172b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <nav class="sidebar is-open" aria-label="섹션 바로가기">
+            <button class="sidebar-toggle" type="button" aria-expanded="true">
+                <span class="toggle-icon" aria-hidden="true">☰</span>
+                <span class="toggle-label">목차 닫기</span>
+            </button>
+            <p class="sidebar-title">섹션 바로가기</p>
+            <ul class="sidebar-links">
+                <li><a href="#overview">간략 소개</a></li>
+                <li><a href="#education">학력</a></li>
+                <li><a href="#experience">경력</a></li>
+                <li><a href="#training">교육</a></li>
+                <li><a href="#awards">수상 · 어학 · 자격증</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#skills">기술</a></li>
+            </ul>
+        </nav>
+        <div class="main-area">
+            <!-- <p class="layout-notice">이 페이지는 데스크탑과 모바일 화면에 맞춰져 있어요.</p> -->
+            <header class="content">
+                <div class="intro">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">다크 / 라이트 모드 🌓</button>
+                    <h1 class="name">한종윤</h1>
+                    <p class="age">1988 (37세)</p>
+                    <hr>
+                    <p>
+                        <i class="fa-regular fa-envelope"></i> <a href="mailto:hjy6296@gmail.com"
+                            rel="noopener">hjy6296@gmail.com</a>
+                        <br><i class="fa-solid fa-mobile-screen"></i> <a href="tel:+821096022622"
+                            rel="noopener">010-9602-2622</a>
+                        <br><i class="fa-regular fa-house"></i> (06126) 서울 강남구 역삼동
+                        <br><i class="fa-brands fa-github"></i> <a href="https://github.com/madmax0404" target="_blank"
+                            rel="noopener noreferrer">https://github.com/madmax0404</a>
+                        <br><i class="fa-solid fa-calendar-days"></i> 마지막 업데이트 일자: 2025.09.16
+                    </p>
+                </div>
+                <div class="photo">
+                    <img src="./images/resume_portrait2.png" alt="portrait" id="portrait" loading="lazy"
+                        decoding="async">
+                </div>
+            </header>
+            <br>
+            <hr class="junction">
+            <br>
+            <main class="content">
+                <section class="card">
+                    <h2 id="overview"><i class="fa-solid fa-circle-user"></i> 간략 소개</h2>
+                    <hr>
+                    <p>
+                        저는 인간의 두뇌에서 영감을 받은 신경망(딥러닝)과 AI의 무한한 가능성에 깊이 매료되어 있습니다.
+                        <br>AGI 시대가 도래할 것이라 확신하며, 그 과정에 기여하는 것이 제 인생의 바람입니다.
+                        <br>귀사에서 저의 열정과 역량을 발휘하여 함께 성장하는 인재가 되고 싶습니다.
+                    </p>
+                    <p>
+                        <br>
+                        <b>[핵심역량]</b>
+                        <br><b>• Python 독학 (6년 이상)</b>
+                        <br><b>• 테이블 데이터 기반 ML (GBDT, Sklearn 등): 준 전문가 급</b>
+                        <br><b>• 딥러닝(신경망): 모델 아키텍쳐 설계 및 파인튜닝 가능</b>
+                        <br><b>• LLM: OpenAI API, Gemini API, RAG, Agent, MCP, 프롬프트 엔지니어링 및 파인튜닝 가능</b>
+                        <br><b>• 프론트: Javascript, HTML5, CSS3, jQuery, Ajax, TypeScript, React 등 활용 가능</b>
+                        <br><b>• Git 기반 협업 가능</b>
+                        <br><b>• Oracle DB 구축 및 SQL 활용 가능</b>
+                        <br><b>• AWS 활용 가능</b>
+                        <br><b>• 강화학습 파인튜닝 경험 (DeepSeek/커스텀 신경망 활용; PPO)</b>
+                        <br><b>• 3D 이미지 컴퓨터 비전 경험 (UNet3D, YOLOv11 등 활용)</b>
+                        <br><b>• Java Spring + Python + 프론트 풀스택 경험</b>
+                    </p>
+                    <p>
+                        <br>
+                        <b>[기타]</b>
+                        <br>• Kaggle 수상 다수 (은메달2, 동메달1 보유, 현재 랭킹 상위 1.2%)
+                        <br>• LLM 이종 모델 간 대화 유지 시스템 개발 (특허 출원; 출원 번호: 10-2025-0118841)
+                        <br>• 부동산 개발회사에서 파이썬 기반 데이터 분석 시스템 단독 구축
+                        <br>• Ubuntu Desktop 24.04 LTS 사용중
+                    </p>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section class="card">
+                    <h2 id="education"><i class="fa-solid fa-user-graduate"></i> 학력</h2>
+                    <hr>
+                    <h3 class="no-margin">University of Canberra (호주) | 2017.09 졸업</h3>
+                    <p class="no-margin">생물의학 학사 (Bachelor of Biomedical Science)</p>
+                    <p>학점: 5.25/7 (마지막 학년: 6/7)</p>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section class="card">
+                    <div class="section-title">
+                        <h2 id="experience"><i class="fa-solid fa-suitcase"></i> 경력</h2>
+                        <p class="p-description">| 총 경력 2년 8개월</p>
+                    </div>
+                    <hr>
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">주식회사한별디비에이치</h3>
+                        <p class="p-description no-bottom-margin">| 2021.05 ~ 2023.04 (2년)</p>
+                    </div>
+                    <p class="no-top-margin">사업개발 • 개발사업본부</p>
+                    <p>부동산 시세분석: Python을 활용하여 데이터 수집부터 가공, 시각화 및 기계학습까지 전 과정을 자동화 (아래 회사가 법인으로 전환)</p>
+                    <hr class="weak">
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">엠마오디엔씨(DNC)</h3>
+                        <p class="p-description no-bottom-margin">| 2020.10 ~ 2021.05 (8개월)</p>
+                    </div>
+                    <p class="no-top-margin">사업개발 • 개발사업본부</p>
+                    <p>부동산 시세분석: Python을 활용하여 데이터 수집부터 가공, 시각화 및 기계학습까지 전 과정을 자동화</p>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section class="card">
+                    <h2 id="training"><i class="fa-solid fa-school"></i> 교육</h2>
+                    <hr>
+                    <h3 class="no-bottom-margin">KH정보교육원</h3>
+                    <p class="no-top-margin">2025.04.18 ~ 2025.09.29</p>
+                    <a href="https://kh-academy.co.kr/edu/curriculumDetailView.kh?no=2" target="_blank"
+                        rel="noopener noreferrer">
+                        (디지털컨버전스) React & Spring 활용 자바(Java) 개발자 양성과정
+                    </a>
+                    <p>
+                        <b>[2025.09.13 기준]</b>
+                        <br>• 수료율: 89.2%
+                        <br>• 출석율: 100%
+                        <br>• 평균 시험 점수: 98.5점
+                    </p>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section class="card">
+                    <h2 id="awards"><i class="fa-solid fa-medal"></i> 수상 / 어학 / 자격증</h2>
+                    <hr>
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">Jane Street Real-Time Market Data Forecasting</h3>
+                        <p class="p-description no-bottom-margin" style="align-self: flex-end;">| 2025</p>
+                    </div>
+                    <p class="no-top-margin">Kaggle</p>
+                    <p><b>은메달 (상위 4.3%)</b></p>
+                    <p>팀으로 참여</p>
+                    <hr class="weak">
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">Child Mind Institute - Problematic Internet Use</h3>
+                        <p class="p-description no-bottom-margin" style="align-self: flex-end;">| 2024</p>
+                    </div>
+                    <p class="no-top-margin">Kaggle</p>
+                    <p><b>은메달 (상위 1.5%)</b></p>
+                    <p>개인으로 참여</p>
+                    <hr class="weak">
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">2019 Data Science Bowl</h3>
+                        <p class="p-description no-bottom-margin" style="align-self: flex-end;">| 2019</p>
+                    </div>
+                    <p class="no-top-margin">Kaggle</p>
+                    <p><b>동메달 (상위 8.7%)</b></p>
+                    <p>팀으로 참여</p>
+                    <hr class="weak">
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">SQLD</h3>
+                        <p class="p-description no-bottom-margin" style="align-self: flex-end;">| 2025</p>
+                    </div>
+                    <p class="no-top-margin">한국데이터산업진흥원</p>
+                    <p>SQLD-057008610</p>
+                    <hr class="weak">
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">IELTS</h3>
+                        <p class="p-description no-bottom-margin" style="align-self: flex-end;">| 2025</p>
+                    </div>
+                    <p class="no-top-margin">British Council Korea</p>
+                    <p>7.5점</p>
+                    <hr class="weak">
+                    <div class="section-title no-bottom-margin">
+                        <h3 class="no-bottom-margin">운전면허증</h3>
+                        <p class="p-description no-bottom-margin" style="align-self: flex-end;">| 2024</p>
+                    </div>
+                    <p class="no-top-margin">경기도북부경찰청</p>
+                    <p>2종보통</p>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section class="card">
+                    <h2 id="projects"><i class="fa-solid fa-folder-open"></i> 프로젝트</h2>
+                    <hr>
+                    <div class="project">
+                        <h3>CoreFlow AI - RAG / Agent / MCP</h3>
+                        <p>
+                            KH정보교육원에서 2025.09.16 현재 진행하고 있는 파이널 프로젝트.
+                            <br>
+                            <br>LLM 모델은 <a href="https://ollama.com/" target="_blank"
+                                rel="noopener noreferrer">Ollama</a>를 사용해 제 개인 로컬 컴퓨터(GPU: RTX 3090)에
+                            <a href="https://deepmind.google/models/gemma/gemma-3/" target="_blank"
+                                rel="noopener noreferrer">Gemma3:4b-it-qat</a>를 사용할 수 있도록 서버를 구축하였으며,
+                            HuggingFace의 <a href="https://huggingface.co/docs/transformers/en/index" target="_blank"
+                                rel="noopener noreferrer">Transformers</a>와
+                            <a href="https://sbert.net/" target="_blank" rel="noopener noreferrer">Sentence
+                                Transformers</a>로
+                            <a href="https://huggingface.co/Qwen/Qwen3-Embedding-4B#evaluation" target="_blank"
+                                rel="noopener noreferrer">Qwen3-Embedding-4B</a>
+                            임베딩 모델과
+                            <a href="https://huggingface.co/Qwen/Qwen3-Reranker-4B#evaluation" target="_blank"
+                                rel="noopener noreferrer">Qwen3-Reranker-4B</a> 리랭커 모델을 사용하였고,
+                            LangChain과 Chroma DB를 사용하여 쿼리와 관련된 문장들을 MMR 방식으로 가져와 해당 문장들이 포함된 문단 및 상위 문서들을
+                            리랭커를 사용하여 상위 5개 문서들을 첨부하여 답변의 품질을 향상시키도록 함.
+                            임베딩, 리랭커 모델 또한 로컬 컴퓨터에서 사용할 수 있도록 함.
+                            파이프라인 전체가 로컬 컴퓨터를 사용하므로 모델 사용 비용이 발생하지 않음.
+                            <br>
+                            <br>2025.09.16 기준 <b>RAG 및 MCP를 사용한 Agent를 OpenAI Agent SDK를 사용하여 구현 완료</b>하였고,
+                            현재는 LangChain, LangGraph를 사용하여 위의 Ollama로 구동하는 Gemma3를 Agent로 구현하는 과정 중에 있음.
+                            <br>
+                        </p>
+                        <a href="https://github.com/madmax0404/coreflow-ai" target="_blank"
+                            rel="noopener noreferrer">https://github.com/madmax0404/coreflow-ai</a>
+                        <br>
+                        <br>
+                        <img src="https://github.com/madmax0404/coreflow-ai/raw/main/images/coreflowaichatexample.png"
+                            alt="CoreFlow AI 채팅 스크린샷" loading="lazy" decoding="async">
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>Child Mind Institute — Problematic Internet Use (PIU)</h3>
+                        <p>
+                            아이들의 신체 데이터, 설문, 액티그래피(신체 움직임 및 빛 노출 정도 따위를 측정하는 기계) 기록 등을 사용하여,
+                            인터넷 사용 문제 정도를 예측하는 기계학습 모델을 만드는 Kaggle 대회에 단독으로 참여하여 상위 1.5% 성적으로 은메달을 수상함.
+                        </p>
+                        <a href="https://github.com/madmax0404/kaggle-childmind-silver-medal" target="_blank"
+                            rel="noopener noreferrer">
+                            https://github.com/madmax0404/kaggle-childmind-silver-medal
+                        </a>
+                        <br>
+                        <br>
+                        <img src="https://github.com/madmax0404/kaggle-childmind-silver-medal/raw/master/images/Screenshot%20from%202025-06-08%2017-43-57.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <!-- <img src="https://github.com/madmax0404/kaggle-childmind-silver-medal/raw/master/images/learning_rate_optuna_visualization.png" alt="" style="width: 950px;"> -->
+                        <!-- <img src="https://github.com/madmax0404/kaggle-childmind-silver-medal/raw/master/images/max_depth_optuna_visualization.png" alt="" style="width: 950px;"> -->
+                        <!-- <img src="https://github.com/madmax0404/kaggle-childmind-silver-medal/raw/master/images/subsample_optuna_visualization.png" alt="" style="width: 950px;"> -->
+                        <!-- <img src="https://github.com/madmax0404/kaggle-childmind-silver-medal/raw/master/images/feature_importance.png" alt="" style="width: 950px;"> -->
+                        <img src="https://github.com/madmax0404/kaggle-childmind-silver-medal/raw/master/images/Screenshot%20from%202025-06-08%2019-49-23.png"
+                            alt="" loading="lazy" decoding="async">
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>CZII - CryoET Object Identification</h3>
+                        <p>
+                            세포 내부를 촬영한 3D 이미지를 이용해 딥러닝을 활용하여 리보솜(ribosome) 따위의 단백질 구조물들의 위치를 파악하는 컴퓨터 비전 문제.
+                        </p>
+                        <a href="https://github.com/madmax0404/kaggle-czii" target="_blank"
+                            rel="noopener noreferrer">https://github.com/madmax0404/kaggle-czii</a>
+                        <br>
+                        <br>
+                        <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/ribosome_identification.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <!-- <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/ribosome_close_up.png" alt="" style="width: 950px;"> -->
+                        <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/painted_segmentation.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/train_batch0.jpg"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/heatmap_approach.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <!-- <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/radius_map_approach.png" alt="" style="width: 950px;"> -->
+                        <!-- <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/first_epoch_patches.png" alt="" style="width: 950px;"> -->
+                        <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/52nd_epoch_patches.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <img src="https://github.com/madmax0404/kaggle-czii/raw/master/assets/figs/52nd_epoch_tomogram_labels_and_predictions.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>DRW - Crypto Market Prediction</h3>
+                        <p>
+                            익명화된 암호화폐 거래 내역으로 익명화된 목표 변수의 미래값을 예측하는 기계학습 모델을 만드는 Kaggle 대회에
+                            팀으로 참가하여 상위 11%의 성적을 거둠.
+                        </p>
+                        <a href="https://github.com/madmax0404/kaggle-drw-crypto-market-prediction-2025" target="_blank"
+                            rel="noopener noreferrer">
+                            https://github.com/madmax0404/kaggle-drw-crypto-market-prediction-2025
+                        </a>
+                        <br>
+                        <br>
+                        <img src="https://github.com/madmax0404/kaggle-drw-crypto-market-prediction-2025/raw/main/images/feature_importance.png"
+                            alt="" loading="lazy" decoding="async">
+                        <img src="https://github.com/madmax0404/kaggle-drw-crypto-market-prediction-2025/raw/main/images/learning_curve.png"
+                            alt="" loading="lazy" decoding="async">
+                        <img src="https://github.com/madmax0404/kaggle-drw-crypto-market-prediction-2025/raw/main/images/LGB_Optuna_20250720_1.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                        <!-- <img src="https://github.com/madmax0404/kaggle-drw-crypto-market-prediction-2025/raw/main/images/blending_result.png" alt="" style="width: 950px;"> -->
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>NeurIPS 2024 - Lux AI Season 3 — LLM 에이전트 (DeepSeek-R1-Distill-Qwen-1.5B)</h3>
+                        <p>
+                            LLM(DeepSeek-R1-Distill-Qwen-1.5B)을 강화 학습(PPO)을 통해 파인 튜닝하여 1대1 자원 수집 게임을 플레이하는 에이전트로 훈련.
+                        </p>
+                        <a href="https://github.com/madmax0404/kaggle-lux-deepseek" target="_blank"
+                            rel="noopener noreferrer">https://github.com/madmax0404/kaggle-lux-deepseek</a>
+                        <br>
+                        <br>
+                        <img src="https://github.com/madmax0404/kaggle-lux-deepseek/raw/master/images/Screenshot%20from%202025-06-14%2013-48-32.png"
+                            alt="" loading="lazy" decoding="async">
+                        <img src="https://github.com/madmax0404/kaggle-lux-deepseek/raw/master/images/Screenshot%20from%202025-06-14%2012-38-21.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>NeurIPS 2024 - Lux AI Season 3 — 강화학습 신경망 에이전트</h3>
+                        <p>
+                            커스텀 신경망을 강화 학습(PPO)을 통해 1대1 자원 수집 게임을 플레이하는 에이전트로 훈련.
+                        </p>
+                        <a href="https://github.com/madmax0404/kaggle-lux-stable-baseline3" target="_blank"
+                            rel="noopener noreferrer">
+                            https://github.com/madmax0404/kaggle-lux-stable-baseline3
+                        </a>
+                        <br>
+                        <br>
+                        <img src="https://github.com/madmax0404/kaggle-lux-stable-baseline3/raw/master/images/Screenshot%20from%202025-03-09%2023-57-56.png"
+                            alt="" style="width: 950px;" loading="lazy" decoding="async">
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>Jane Street Real-Time Market Data Forecasting</h3>
+                        <p>
+                            익명화된 금융 시장(주식 등) 거래 내역으로 익명화된 목표 변수의 미래값을 예측하는 기계학습 모델을 만드는
+                            Kaggle 대회에 팀으로 참가하여 상위 4.3% 성적으로 은메달을 수상함.
+                        </p>
+                        <a href="https://github.com/madmax0404/kaggle-janestreet-silver-medal" target="_blank"
+                            rel="noopener noreferrer">
+                            https://github.com/madmax0404/kaggle-janestreet-silver-medal
+                        </a>
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>new Learn();</h3>
+                        <p>
+                            KH정보교육원에서 2025.07.02 ~ 2025.08.08까지 진행한 세미 프로젝트.
+                            <br>
+                            <br>
+                            <b>[개발 목표]</b>
+                            <br>
+                            <b>1. 효율적인 반 소통 및 관리 시스템 구축</b>
+                            <br>
+                            Slack·블로그 기반 소통의 한계를 개선하고, 학생 간 자유로운 교류와 선생님의 반 관리 기능을 통합 제공.
+                            <br>
+                            <b>2. AI 학습 경험 통합 플랫폼 제공</b>
+                            <br>
+                            ChatGPT, Gemini, Claude 등 다양한 AI를 한 플랫폼에서 사용할 수 있도록 하여 개별 구독 비용을 절감하고 학습 효율성 향상.
+                            <br>
+                            <b>3. 학습 경험의 질 향상 및 즐거운 학원 생활 지원</b>
+                            <br>
+                            소통 공간과 AI 학습 도구를 결합해 학생·선생님 모두 더 높은 몰입감과 재미를 느낄 수 있도록 설계.
+                            <br>
+                            <b>4. 팀원들의 전반적 개발 경험 확장</b>
+                            <br>
+                            프론트엔드, 백엔드, DB, CRUD, Java, Ajax 활용 등 전 과정을 팀원 모두 경험하며 실무 역량 강화.
+                            <br>
+                            <br>
+                            <b>[특이 사항]</b>
+                            <br>
+                            <b>• LLM 이종 모델 간 대화 유지 시스템 개발 (특허 출원; 출원 번호: 10-2025-0118841)</b>
+                        </p>
+                        <a href="https://github.com/madmax0404/semi-project-newlearn" target="_blank"
+                            rel="noopener noreferrer">https://github.com/madmax0404/semi-project-newlearn</a>
+                        <p>*특허 출원 관계로 깃헙 레포지토리는 현재 비공개 상태입니다.</p>
+                        <br>
+                        <br>
+                        <img src="./images/newlearnai.png" alt="" style="width: 950px;" loading="lazy" decoding="async">
+                    </div>
+                    <hr class="weak">
+                    <div class="project">
+                        <h3>2019 Data Science Bowl</h3>
+                        <p>
+                            아이들의 게임 플레이 데이터를 바탕으로 특정 테스트들에서 어떤 성과를 거둘지 예측하는 기계학습 모델을 만드는
+                            Kaggle 대회에 팀으로 참가하여 상위 8.7% 성적으로 동메달을 수상함.
+                        </p>
+                        <a href="https://www.kaggle.com/code/max6296/id-no-title-specific-dist-preds-rank-average?scriptVersionId=27398335"
+                            target="_blank" rel="noopener noreferrer">
+                            https://www.kaggle.com/code/max6296/id-no-title-specific-dist-preds-rank-average?scriptVersionId=27398335
+                        </a>
+                        <a href="https://www.kaggle.com/competitions/data-science-bowl-2019" target="_blank"
+                            rel="noopener noreferrer">
+                            https://www.kaggle.com/competitions/data-science-bowl-2019
+                        </a>
+                    </div>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section class="card">
+                    <h2 id="skills"><i class="fa-solid fa-book"></i> 기술</h2>
+                    <hr>
+                    <h3>백엔드</h3>
+                    <p>Python / Java / MyBatis / Oracle SQL / Servlet</p>
+                    <hr class="weak">
+                    <h3>프론트엔드</h3>
+                    <p>JavaScript / jQuery / HTML5 / CSS3 / Ajax / JSP / TypeScript / React / Tailwind / Bootstrap</p>
+                    <hr class="weak">
+                    <h3>기계학습</h3>
+                    <p>scikit-learn / LightGBM / XGBoost / Catboost / Optuna / SHAP</p>
+                    <hr class="weak">
+                    <h3>딥러닝</h3>
+                    <p>PyTorch / TensorFlow / Keras / MONAI</p>
+                    <hr class="weak">
+                    <h3>강화학습</h3>
+                    <p>Stable Baselines3 / Gymnasium / TRL</p>
+                    <hr class="weak">
+                    <h3>LLM</h3>
+                    <p>
+                        Ollama / LangChain / Transformers / Sentence Transformers / OpenAI API / Gemini API / OpenAI
+                        Agents SDK /
+                        <br>MCP Python SDK / RAG / Chroma (Vector DB)
+                    </p>
+                    <hr class="weak">
+                    <h3>데이터 처리</h3>
+                    <p>pandas / Polars / Pydantic</p>
+                    <hr class="weak">
+                    <h3>시각화</h3>
+                    <p>Matplotlib / Seaborn / napari</p>
+                    <hr class="weak">
+                    <h3>웹</h3>
+                    <p>FastAPI / Requests / Selenium / Axios / RESTful API</p>
+                    <hr class="weak">
+                    <h3>기타 라이브러리 & 프레임워크</h3>
+                    <p>Spring / Spring Boot / NumPy / SciPy / JDBC / JSTL</p>
+                    <hr class="weak">
+                    <h3>DB</h3>
+                    <p>Oracle</p>
+                    <hr class="weak">
+                    <h3>툴</h3>
+                    <p>Eclipse / STS / VS Code / Jupyter Notebook / Maven</p>
+                    <hr class="weak">
+                    <h3>환경</h3>
+                    <p>Windows 10/11 / Linux Ubuntu Desktop 24.04 LTS / Apache Tomcat 9.0 / Amazon EC2 (AWS) / Amazon
+                        Linux 2023</p>
+                    <hr class="weak">
+                    <h3>협업</h3>
+                    <p>GitHub / SourceTree / Slack / Notion / ERD Cloud / draw.io / Figma</p>
+                </section>
+            </main>
+            <!-- <hr class="junction">
+    <footer class="content">
+
+    </footer> -->
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.querySelector('.sidebar');
+            const toggle = document.querySelector('.sidebar-toggle');
+            if (!sidebar || !toggle) {
+                return;
+            }
+            const label = toggle.querySelector('.toggle-label');
+            const mql = window.matchMedia('(max-width: 640px)');
+            function setState(expanded) {
+                toggle.setAttribute('aria-expanded', String(expanded));
+                sidebar.classList.toggle('is-open', expanded);
+                if (label) {
+                    label.textContent = expanded ? '목차 닫기' : '목차 열기';
+                }
+            }
+            function syncToViewport(event) {
+                if (event.matches) {
+                    setState(false);
+                } else {
+                    setState(true);
+                }
+            }
+            syncToViewport(mql);
+            mql.addEventListener('change', syncToViewport);
+            toggle.addEventListener('click', function () {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                setState(!expanded);
+            });
+        });
+    </script>
+</body>
+
+</html>
